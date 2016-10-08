@@ -1,5 +1,10 @@
 .profile-pic-small {
-    width: 7%;
+    width: 5vw;
+}
+
+.profile-pic-medium {
+    width: 15vw;
+    margin: 10px auto;
 }
 
 .margin-rl-10 {
@@ -17,9 +22,71 @@
 .text-highlight-branding {
     color: $branding-blue;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 5vw;
+}
+
+.text-color {
+    color: $main-text-color
+}
+
+a{
+    color: RGBA(171, 186, 197, 1.00);
+    text-decoration: underline;
 }
 
 .col-padding {
-    padding: 60px;
+    padding: 20px 30px 20px 30px;
+}
+
+.button {
+    // border: 1px solid gray;
+    display: inline-block;
+    text-align: center;
+    // width: 25%;
+    // padding: 2px;
+    color: white;
+    margin-right: 5px;
+
+    .button-icon {
+        // width: 40%;
+        float:left;
+        background: RGBA(94, 104, 111, 1.00);
+        padding: 5px;
+
+    }
+
+    .button-body {
+        // width: 60%;
+        background: RGBA(163, 179, 191, 1.00);
+        float:left;
+        padding: 5px;
+    }
+
+    .active {
+        background: RGBA(16, 109, 179, 1.00);
+    }
+}
+
+.img-ad {
+    height: 25vw;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .text-highlight-branding {
+        font-size: 4vw;
+    }
+
+    .nav-padding {
+        padding-top: 15px;
+    }
+
+    .profile-pic-medium {
+        width: 7vw;
+    }
+
+    .profile-pic-small {
+        width: 2vw;
+    }
 }

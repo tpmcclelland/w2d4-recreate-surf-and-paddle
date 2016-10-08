@@ -1,9 +1,10 @@
 .header-background {
-    background-image: url(../img/img_849.jpg);
+    background-image: linear-gradient(RGBA(60, 130, 178, .5),RGBA(60, 130, 178, .5)), url(../img/img_849.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 8vw;
+    //opacity: .5;
 }
 
 .logo-img {
@@ -49,7 +50,17 @@
     color: white;
     text-transform: uppercase;
     font-size: 7vw;
-    padding-top: 7vw;
+    //padding-top: 7vw;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+    background: $collapsed-menu-color;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: white;
 }
 
 .tagline {
@@ -57,10 +68,14 @@
     // margin-bottom: 7vw;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .navbar-text {
         float: left;
         margin-right: 15px;
         margin-left: 0;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        background: transparent;
     }
 }

@@ -7,8 +7,21 @@ html, body {
 img {
   width: 100%; }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6; }
+
+.img-overlay {
+  opacity: .5; }
+
+.background_fade {
+  background: RGBA(60, 130, 178, 1); }
+
+.text-gray {
+  color: RGBA(148, 166, 180, 1); }
+
 .header-background {
-  background-image: url(../img/img_849.jpg);
+  background-image: linear-gradient(RGBA(60, 130, 178, 0.5), RGBA(60, 130, 178, 0.5)), url(../img/img_849.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,20 +61,33 @@ img {
 .headline {
   color: white;
   text-transform: uppercase;
-  font-size: 7vw;
-  padding-top: 7vw; }
+  font-size: 7vw; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+  background: RGBA(211, 211, 211, 0.4); }
+
+.jumbotron {
+  background-color: transparent;
+  color: white; }
 
 .tagline {
   color: RGB(8, 52, 81); }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar-text {
     float: left;
     margin-right: 15px;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: transparent; } }
 
 .profile-pic-small {
-  width: 7%; }
+  width: 5vw; }
+
+.profile-pic-medium {
+  width: 15vw;
+  margin: 10px auto; }
 
 .margin-rl-10 {
   margin: auto 10px; }
@@ -75,7 +101,141 @@ img {
 .text-highlight-branding {
   color: RGB(8, 52, 81);
   text-transform: uppercase;
-  font-size: 50px; }
+  font-size: 5vw; }
+
+.text-color {
+  color: RGBA(110, 118, 125, 1); }
+
+a {
+  color: RGBA(171, 186, 197, 1);
+  text-decoration: underline; }
 
 .col-padding {
-  padding: 60px; }
+  padding: 20px 30px 20px 30px; }
+
+.button {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  margin-right: 5px; }
+  .button .button-icon {
+    float: left;
+    background: RGBA(94, 104, 111, 1);
+    padding: 5px; }
+  .button .button-body {
+    background: RGBA(163, 179, 191, 1);
+    float: left;
+    padding: 5px; }
+  .button .active {
+    background: RGBA(16, 109, 179, 1); }
+
+.img-ad {
+  height: 25vw; }
+
+@media screen and (min-width: 768px) {
+  .text-highlight-branding {
+    font-size: 4vw; }
+  .nav-padding {
+    padding-top: 15px; }
+  .profile-pic-medium {
+    width: 7vw; }
+  .profile-pic-small {
+    width: 2vw; } }
+
+.footer-border {
+  border-top: 1px solid RGBA(232, 237, 238, 1); }
+
+.footer-heading {
+  color: RGB(8, 52, 81);
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: center; }
+
+.no-margin {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.flex-row {
+  display: flex;
+  flex-direction: column; }
+
+.flex-row-inline {
+  flex-direction: row; }
+
+.img-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#img-left {
+  background-image: linear-gradient(RGBA(60, 130, 178, 0.5), RGBA(60, 130, 178, 0.5)), url(../img/img_302.jpg); }
+  #img-left:hover {
+    background-image: url(../img/img_302.jpg); }
+
+#img-left-middle {
+  background-image: linear-gradient(RGBA(60, 130, 178, 0.5), RGBA(60, 130, 178, 0.5)), url(../img/img_304.jpg); }
+  #img-left-middle:hover {
+    background-image: url(../img/img_304.jpg); }
+
+#img-right-middle {
+  background-image: linear-gradient(RGBA(60, 130, 178, 0.5), RGBA(60, 130, 178, 0.5)), url(../img/img_305.jpg); }
+  #img-right-middle:hover {
+    background-image: url(../img/img_305.jpg); }
+
+#img-right {
+  background-image: linear-gradient(RGBA(60, 130, 178, 0.5), RGBA(60, 130, 178, 0.5)), url(../img/img_306.jpg); }
+  #img-right:hover {
+    background-image: url(../img/img_306.jpg); }
+
+.flex-col-height {
+  height: 25vw; }
+
+.flex-align-bottom {
+  display: flex;
+  align-items: flex-end; }
+
+.img-text {
+  color: RGB(8, 52, 81);
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.flex-col {
+  flex: 1; }
+
+.ironyard-footer {
+  background: RGBA(8, 52, 82, 1); }
+
+.ironyard-logo {
+  width: 10%;
+  opacity: .5; }
+
+@media screen and (min-width: 768px) {
+  .flex-row {
+    flex-direction: row; }
+  .flex-col-1 {
+    flex: 1; }
+  .flex-col-2 {
+    flex: 2; }
+  .flex-col-3 {
+    flex: 3; }
+  .flex-col-4 {
+    flex: 4; }
+  .flex-col-5 {
+    flex: 5; }
+  .flex-col-6 {
+    flex: 6; }
+  .flex-col-7 {
+    flex: 7; }
+  .flex-col-8 {
+    flex: 8; }
+  .flex-col-9 {
+    flex: 9; }
+  .flex-col-10 {
+    flex: 10; }
+  .flex-col-11 {
+    flex: 11; }
+  .flex-col-12 {
+    flex: 12; }
+  .img-text {
+    font-size: 25px; } }

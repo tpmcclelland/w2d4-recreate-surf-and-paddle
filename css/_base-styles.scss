@@ -1,3 +1,20 @@
 * { box-sizing: border-box; }
 html, body { height: 100% }
 img { width: 100% }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.img-overlay {
+    opacity: .5;
+}
+
+.background_fade {
+    background: RGBA(60, 130, 178, 1);
+}
+
+.text-gray {
+    color: RGBA(148, 166, 180, 1.00);
+}

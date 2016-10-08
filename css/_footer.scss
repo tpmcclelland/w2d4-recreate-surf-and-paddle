@@ -1,0 +1,118 @@
+.footer-border {
+    border-top: 1px solid RGBA(232, 237, 238, 1.00);
+}
+
+.footer-heading {
+    color: $branding-blue;
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.no-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-inline {
+    flex-direction: row;
+}
+
+.img-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img-left {
+    background-image: linear-gradient(RGBA(60, 130, 178, .5),RGBA(60, 130, 178, .5)), url(../img/img_302.jpg);
+
+    &:hover {
+        background-image: url(../img/img_302.jpg);
+    }
+}
+
+#img-left-middle{
+    background-image: linear-gradient(RGBA(60, 130, 178, .5),RGBA(60, 130, 178, .5)), url(../img/img_304.jpg);
+
+    &:hover {
+        background-image: url(../img/img_304.jpg);
+    }
+}
+
+#img-right-middle {
+    background-image: linear-gradient(RGBA(60, 130, 178, .5),RGBA(60, 130, 178, .5)), url(../img/img_305.jpg);
+
+    &:hover {
+        background-image: url(../img/img_305.jpg);
+    }
+}
+
+#img-right {
+    background-image: linear-gradient(RGBA(60, 130, 178, .5),RGBA(60, 130, 178, .5)), url(../img/img_306.jpg);
+
+    &:hover {
+        background-image: url(../img/img_306.jpg);
+    }
+}
+
+.flex-col-height {
+    height: 25vw;
+}
+
+.flex-align-bottom {
+    // justify-content: flex-end;
+    display: flex;
+    // justify-content: center;
+    align-items: flex-end;
+}
+
+.img-text {
+    //position: absolute;;
+    // bottom: 0;
+    color: $branding-blue;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.flex-col {
+    flex: 1;
+}
+
+.ironyard-footer {
+    background: RGBA(8, 52, 82, 1.00);
+}
+
+.ironyard-logo {
+    width: 10%;
+    opacity: .5;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .flex-col-1 { flex: 1; }
+    .flex-col-2 { flex: 2; }
+    .flex-col-3 { flex: 3; }
+    .flex-col-4 { flex: 4; }
+    .flex-col-5 { flex: 5; }
+    .flex-col-6 { flex: 6; }
+    .flex-col-7 { flex: 7; }
+    .flex-col-8 { flex: 8; }
+    .flex-col-9 { flex: 9; }
+    .flex-col-10 { flex: 10; }
+    .flex-col-11 { flex: 11; }
+    .flex-col-12 { flex: 12; }
+
+    .img-text {
+        font-size: 25px;
+    }
+}
