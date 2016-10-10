@@ -60,10 +60,10 @@ a{
         background: RGBA(163, 179, 191, 1.00);
         float:left;
         padding: 5px;
-    }
 
-    .active {
-        background: RGBA(16, 109, 179, 1.00);
+        &:hover {
+            background: RGBA(16, 109, 179, 1.00);
+        }
     }
 }
 

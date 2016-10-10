@@ -13,6 +13,8 @@ body {
 
 .img-overlay {
   opacity: .5; }
+  .img-overlay:hover {
+    opacity: 1; }
 
 .background_fade {
   background: RGBA(60, 130, 178, 1); }
@@ -126,8 +128,8 @@ a {
     background: RGBA(163, 179, 191, 1);
     float: left;
     padding: 5px; }
-  .button .active {
-    background: RGBA(16, 109, 179, 1); }
+    .button .button-body:hover {
+      background: RGBA(16, 109, 179, 1); }
 
 .img-ad {
   height: 25vw; }
